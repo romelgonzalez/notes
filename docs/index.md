@@ -1,6 +1,6 @@
 # Indice
 
-Bienvenido a DocummentVaul RG. Aquí encontrarás listas organizadas de comandos útiles para diversos interpretes o shells.
+Bienvenido a DocummentVaul RG. Aquí encontrarás una lista organizadas de comandos útiles para diversos interpretes o shells.
 
 ## Bash
 
