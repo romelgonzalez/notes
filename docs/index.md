@@ -1,68 +1,36 @@
-# Homepage
+# Indice
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Bienvenido a DocummentVaul RG. Aquí encontrarás listas organizadas de comandos útiles para diversos interpretes o shells.
 
-## Code Annotation Examples
+## Bash
 
-### Codeblocks
+- [Comandos Básicos](bash/basic.md)
+- [Sistema de Archivos](bash/filesystem.md)
+- [Redes](bash/networking.md)
+- [Scripting](bash/scripting.md)
 
-Some `code` goes here.
+## PowerShell
 
-### Plain codeblock
+- [Comandos Básicos](powershell/basic.md)
+- [Sistema de Archivos](powershell/filesystem.md)
+- [Redes](powershell/networking.md)
+- [Scripting](powershell/scripting.md)
 
-A plain codeblock:
+## GCP
 
-```
-Some code here
-def myfunction()
-// some comment
-```
+- [Comandos Básicos](gcp/basic.md)
+- [Compute](gcp/compute.md)
+- [Storage](gcp/storage.md)
+- [Redes](gcp/networking.md)
 
-#### Code for a specific language
+## Azure
 
-Some more code with the `py` at the start:
+- [Comandos Básicos](azure/basic.md)
+- [Compute](azure/compute.md)
+- [Storage](azure/storage.md)
+- [Redes](azure/networking.md)
 
-``` py
-import tensorflow as tf
-def whatever()
-```
+## SQL
 
-#### With a title
-
-``` py title="bubble_sort.py"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-
-#### With line numbers
-
-``` py linenums="1"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-
-#### Highlighting lines
-
-``` py hl_lines="2 3"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-
-## Icons and Emojs
-
-:smile: 
-
-:fontawesome-regular-face-laugh-wink:
-
-:fontawesome-brands-twitter:{ .twitter }
-
-:octicons-heart-fill-24:{ .heart }
+- [MySQL](sql/mysql.md)
+- [PostgreSQL](sql/postgresql.md)

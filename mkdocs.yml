@@ -1,40 +1,79 @@
-site_name: My Docs
+site_name: CommandVault RG
 theme:
   name: material
+  icon: 
+    logo: material/file-code
+  favicon: assets/favicon.png
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
-    - navigation.tabs
+    - navigation.tabs # To have tabs instead of links
     - navigation.sections
-    - toc.integrate
-    - navigation.top
+    - navigation.expand
+    - navigation.instant
+    - toc.integrate # to have a toc on the left
+    - navigation.top # to have a shorcut to go back on top of the page when we scroll down
+    - navigation.tracking # the url evolves with the scrolling
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: en
+  language: es
+  nav:
+  - 'Inicio': 'index.md'
+  - 'Bash':
+      - 'Comandos Básicos': 'bash/basic.md'
+      - 'Sistema de Archivos': 'bash/filesystem.md'
+      - 'Redes': 'bash/networking.md'
+      - 'Scripting': 'bash/scripting.md'
+  - 'PowerShell':
+      - 'Comandos Básicos': 'powershell/basic.md'
+      - 'Sistema de Archivos': 'powershell/filesystem.md'
+      - 'Redes': 'powershell/networking.md'
+      - 'Scripting': 'powershell/scripting.md'
+  - 'GCP':
+      - 'Comandos Básicos': 'gcp/basic.md'
+      - 'Compute': 'gcp/compute.md'
+      - 'Storage': 'gcp/storage.md'
+      - 'Redes': 'gcp/networking.md'
+  - 'Azure':
+      - 'Comandos Básicos': 'azure/basic.md'
+      - 'Compute': 'azure/compute.md'
+      - 'Storage': 'azure/storage.md'
+      - 'Redes': 'azure/networking.md'
+  - 'SQL':
+      - 'MySQL': 'sql/mysql.md'
+      - 'PostgreSQL': 'sql/postgresql.md'
+
   palette:
     - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: teal
-      accent: purple 
+      primary: indigo
+      accent: teal 
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: teal
-      accent: lime
+      primary: indigo
+      accent: teal
 
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/james-willett
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/TheJamesWillett
+      link: https://github.com/romelgonzalez
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/willettjames/
-
+      link: https://www.linkedin.com/in/romel-gonzalez/
+  navigation:
+    - 'Inicio'
+    - 'Bash'
+    - 'Powershell'
+    - 'GCP'
+    - 'Azure'
+    - 'SQL'
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -52,6 +91,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - codehilite
 
 copyright: |
-  &copy; 2023 <a href="https://github.com/james-willett"  target="_blank" rel="noopener">James Willett</a>
+  &copy; 2024 <a href="https://github.com/romelgonzalez"  target="_blank" rel="noopener">Romel Gonzalez</a>
